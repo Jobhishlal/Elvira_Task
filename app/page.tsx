@@ -8,15 +8,15 @@ import IdeologyAndFooter from "@/components/IdeologyAndFooter";
 import MainFooter from "@/components/MainFooter";
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black">
+    <main className="min-h-screen bg-black overflow-x-hidden">
       <Navbar />
       <Hero />
-      <AboutCategories/>
-      <WhyChooseUs/>
-      <OurVision/>
-      <Infrastructure/>
-      
-      <MainFooter/>
+      <AboutCategories />
+      <WhyChooseUs />
+      <OurVision />
+      <Infrastructure />
+
+      <MainFooter />
     </main>
   );
 }

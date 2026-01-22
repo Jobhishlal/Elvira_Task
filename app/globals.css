@@ -4,3 +4,15 @@ body {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   overflow-x: hidden;
 }
+
+@font-face {
+  font-family: 'SamsungSansLight';
+  src: url('/fonts/SamsungOne-400.ttf') format('truetype');
+  /* Adjusted to likely filename, user to replace */
+  font-weight: 300;
+  font-style: normal;
+}
+
+.font-samsung {
+  font-family: 'SamsungSansLight', sans-serif;
+}

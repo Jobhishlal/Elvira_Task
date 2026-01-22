@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <>
       <div className="relative w-full min-h-screen bg-black">
-       
+
         <div className="absolute inset-0">
           <Image
             src="/tailer.png"
@@ -21,37 +21,39 @@ export default function Hero() {
         </div>
 
         <h2 className="
-          absolute top-[120px] left-1/2 -translate-x-1/2
-          text-lg md:text-2xl lg:text-3xl
-          font-light text-white max-w-4xl text-center
+          absolute top-[230px] left-1/2 -translate-x-1/2
+          text-3xl md:text-4xl
+          font-bold text-center max-w-4xl
+          bg-gradient-to-r from-white via-yellow-400 to-white bg-[length:200%_100%] bg-clip-text text-transparent
+          font-samsung
         ">
           Your trusted partner in fashion, from
           <br className="hidden md:block" />
           classrooms to careers
         </h2>
 
-        <div className="absolute bottom-0 left-0 w-full flex flex-col items-center pointer-events-none top-[400]">
-          <h1 className="
-            relative text-[32vw] leading-[0.6]
-            font-bold text-[#facc15] tracking-tighter z-10
-          ">
-            elvira
-          </h1>
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-10 flex items-end w-full justify-center overflow-hidden pointer-events-none">
+          {['e', 'l', 'v', 'i', 'r', 'a'].map((letter, index) => (
+            <h1
+              key={index}
+              className="font-samsung font-bold text-yellow-400 leading-none block translate-y-[17%]"
+              style={{ fontSize: 'clamp(2rem, 32vw, 30rem)' }}
+            >
+              {letter}
+            </h1>
+          ))}
+        </div>
 
-          <div className="absolute bottom-[-10vw] left-0 w-full z-20">
-            <Image
-  src="/scale.png"
-  alt="Tape measure"
-  width={1920}
-  height={220}
-  className="w-full h-auto object-contain rotate-[-6deg]"
-/>
-
-          </div>
+        <div className="absolute bottom-[-15] left-1/2 -translate-x-1/2 w-[100vw] z-20 translate-y-[30%]">
+          <Image
+            src="/scalefullsize.svg"
+            alt="Tape measure"
+            width={2000}
+            height={240}
+            className="w-full h-auto object-cover"
+          />
         </div>
       </div>
-
-      <div className="h-[180px] md:h-[220px] bg-white" />
     </>
   );
 }
