@@ -15,7 +15,7 @@ export default function Home() {
       <WhyChooseUs />
       <OurVision />
       <Infrastructure />
-
+      <IdeologyAndFooter/>
       <MainFooter />
     </main>
   );
